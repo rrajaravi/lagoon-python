@@ -5,8 +5,6 @@ lagoon-python
 
 [lagoon-python](https://github.com/rrajaravi/lagoon-python) is the official Python client for [lagoon](https://github.com/sourcepirate/lagoon), aAn inmemory and highly concurrent bloom filter service based on json-rpc.
 
-You can setup lagoon service: refer - https://raw.githubusercontent.com/sourcepirate/lagoon/master/README.md
-
 ### Installation
 
 lagoon-python supports:
@@ -38,7 +36,7 @@ client.has_key("collection1", "key1")
 
 # delete collection
 client.delete_collection("collection1")
-
+```
 
 ### Contributing
 
@@ -48,9 +46,7 @@ Install test requirements
 
 ```bash
 pip install .[test]
-```
 
-```bash
 py.test
 # with coverage
 py.test --cov lagoon --cov-report html
