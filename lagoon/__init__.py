@@ -9,7 +9,9 @@ __maintainer__ = "Raja Ravi"
 __email__ = "r.rajaravi@gmail.com"
 
 
-def connect(host: str = None, port: int = None, version="v1.0") -> "LagoonClient":
+def connect(
+    host: str = None, port: int = None, version="v1.0"
+) -> "LagoonClient":
     """
     Returns a Client object
     :param host: hostname of lagoon server

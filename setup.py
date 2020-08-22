@@ -63,6 +63,8 @@ class LintCode(Command):
 
             if self.check:
                 params.insert(0, "--check")
+            # pep8 max line-length
+            params.insert(0, "--line-length=79")
             subprocess.run(
                 [sys.executable, "-m", "black"] + params, check=True, env=env,
             )
