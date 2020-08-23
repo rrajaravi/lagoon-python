@@ -50,6 +50,12 @@ pip install .[test]
 py.test
 # with coverage
 py.test --cov lagoon --cov-report html
+# with setuppy
+python setup.py test
+# lint with setup.py
+python setup.py lint 
+# check lint
+python setup.py lint --check
 ```
 
 Install black and flake8
