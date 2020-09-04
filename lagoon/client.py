@@ -96,3 +96,13 @@ class LagoonClient:
         data = self.recieve()
         self._rpc_id += 1
         return data
+
+    def has_collection(self, collection_name: str) -> bool:
+        """
+        Returns bool
+        :param collection_name: name of the collection to check
+        """
+        self.invoke(self._rpc_id, "hasCollection", collection_name)
+        data = self.recieve()
+        self._rpc_id += 1
+        return data
